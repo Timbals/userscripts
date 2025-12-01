@@ -33,5 +33,5 @@
   apply();
 
   // re-apply when a navigation event is fired, because YouTube is a SPA
-  window.navigation.addEventListener("navigate", (event) => { apply(); });
+  window.addEventListener("yt-navigate-finish", (event) => { apply(); });
 })();
